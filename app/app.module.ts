@@ -5,13 +5,15 @@ import { FormsModule }  from '@angular/forms';
 import {TaskListComponent} from './task-list.component';
 import {TaskEditComponent} from './task-edit.component';
 import {NewTaskComponent} from './new-task.component';
+import {CompletenessPipe} from './completeness.pipe';
 
 @NgModule({
   imports: [ BrowserModule, FormsModule ],
   declarations: [ AppComponent,
                   TaskListComponent,
                   TaskEditComponent,
-                  NewTaskComponent],
+                  NewTaskComponent,
+                  CompletenessPipe],
   bootstrap:    [ AppComponent ]
 })
 
